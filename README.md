@@ -32,7 +32,8 @@ admin / root
 
 ## Call Api to Broadcast
 
-'''
+'''C#
+
             WebClient wc = new WebClient();
             string targetAddress ="http://"+ Request.Url.Authority + "/api/push.aspx";
             wc.Encoding = Encoding.UTF8;
@@ -43,4 +44,5 @@ admin / root
             nc["id"] = ddlBots.SelectedValue;
             byte[] bResult = wc.UploadValues(targetAddress, nc);
             string result = Encoding.UTF8.GetString(bResult);
+            
 '''
