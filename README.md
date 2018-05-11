@@ -1,2 +1,15 @@
 # TelegramNotifier
-一套簡單可以做 Telegram 廣播的系統
+
+
+## 有任何問題嗎 ? 
+https://facebook.com/donma.blog
+
+## 用途
+一個簡單的可以加入多個 Telegram BOTs 並且可以進行該 BOT 進行廣播
+
+## 預設登入帳號密碼
+
+admin / root 
+
+可以自行在 web.config 中進行更改
+
