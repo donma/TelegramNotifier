@@ -13,3 +13,6 @@ admin / root
 
 可以自行在 web.config 中進行更改
 
+## Sample
+
+![alt Preview](https://github.com/donma/TelegramNotifier/blob/master/demo1.jpg?raw=true)
