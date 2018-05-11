@@ -27,6 +27,6 @@ admin / root
 
 /last  最後訊息
 
-![alt Preview](https://github.com/donma/TelegramNotifier/blob/master/demo2.jpg){:height="36px"}.
+![alt Preview](https://github.com/donma/TelegramNotifier/blob/master/demo2.jpg|width=200)
 
 
