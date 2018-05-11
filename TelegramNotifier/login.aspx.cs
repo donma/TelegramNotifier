@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -9,10 +10,11 @@ namespace TelegramNotifier
 {
     public partial class login : System.Web.UI.Page
     {
-        private const string AdminId = "admin";
-        private const string AdminPass = "root";
+       
         protected void Page_Load(object sender, EventArgs e)
         {
+
+
             ltlS.Text = "";
 
             if (!string.IsNullOrEmpty(Request["msg"]))
@@ -20,6 +22,8 @@ namespace TelegramNotifier
                 ltlS.Text = "<script>toastr.warning('" + Request["msg"] + "');</script>";
 
             }
+
+         
         }
 
         protected void Unnamed1_Click(object sender, EventArgs e)
@@ -30,9 +34,11 @@ namespace TelegramNotifier
                 return;
             }
 
-            if (txtId.Text == AdminId && txtPass.Text == AdminPass)
+          
+            if (txtId.Text == WebConfigurationManager.AppSettings["adminid"] && txtPass.Text == WebConfigurationManager.AppSettings["adminpass"])
             {
 
+              
                 Session["admin"] = txtId.Text;
                 Session["admindisplay"] = "Administrator";
                 Response.Redirect("dash.aspx");
