@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="push.aspx.cs" Inherits="TelegramNotifier.api.push" %>
