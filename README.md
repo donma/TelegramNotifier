@@ -32,7 +32,7 @@ admin / root
 
 ## Call Api to Broadcast
 
-'''C#
+'''
 
             WebClient wc = new WebClient();
             string targetAddress ="http://"+ Request.Url.Authority + "/api/push.aspx";
