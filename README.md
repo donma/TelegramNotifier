@@ -38,9 +38,9 @@ admin / root
             wc.Encoding = Encoding.UTF8;
             wc.Headers[HttpRequestHeader.ContentType] = "application/x-www-form-urlencoded";
             NameValueCollection nc = new NameValueCollection();
-            nc["token"] = txtBCToken.Text;
-            nc["content"] = Server.HtmlEncode(txtContent.Text);
-            nc["id"] = ddlBots.SelectedValue;
+            nc["token"] = "BROADCAST_TOKEN";
+            nc["content"] = Server.HtmlEncode("BORADCAST_CONTENT");
+            nc["id"] = "BOT_ID";
             byte[] bResult = wc.UploadValues(targetAddress, nc);
             string result = Encoding.UTF8.GetString(bResult);
             
