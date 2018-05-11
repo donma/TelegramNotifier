@@ -16,3 +16,10 @@ admin / root
 ## Sample
 
 ![alt Preview](https://github.com/donma/TelegramNotifier/blob/master/demo1.jpg?raw=true)
+
+## command
+
+/start 註冊接收廣播
+/end 結束接收廣播
+/test 測試
+/last  最後訊息
