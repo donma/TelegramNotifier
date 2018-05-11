@@ -34,7 +34,7 @@ admin / root
 
 ```C#
             WebClient wc = new WebClient();
-            string targetAddress ="http://"+ Request.Url.Authority + "/api/push.aspx";
+            string targetAddress =[YOUR_SITE_PATH]+ "/api/push.aspx";
             wc.Encoding = Encoding.UTF8;
             wc.Headers[HttpRequestHeader.ContentType] = "application/x-www-form-urlencoded";
             NameValueCollection nc = new NameValueCollection();
