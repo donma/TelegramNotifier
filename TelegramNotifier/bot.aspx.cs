@@ -41,6 +41,7 @@ namespace TelegramNotifier
             if (string.IsNullOrEmpty(txtTitle.Text))
             {
                 ltlS.Text = "<script>toastr.warning('Title cant be null.');</script>";
+                return;
             }
 
             bot.Title = txtTitle.Text;
