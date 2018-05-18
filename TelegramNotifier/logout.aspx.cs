@@ -11,6 +11,8 @@ namespace TelegramNotifier
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Session["admindisplay"] = null;
+            Session["admin"] = null;
             Response.Redirect("login.aspx");
         }
     }
